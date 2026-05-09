@@ -1,0 +1,12 @@
+# GitHub Pages 配置
+title: super-DDD3 发电机
+description: 第三代数字变频智能发电机产品展示 — 静音、高效、安全
+theme: minima
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
