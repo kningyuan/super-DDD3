@@ -1,0 +1,6 @@
+  title: "GEO Demo — super-DDD3"
+  description: "Demonstration site for GEO-style pages"
+  baseurl: "/GEO-Demo-my"
+  url: "https://kningyuan.github.io"
+  theme: minima
+  markdown: kramdown
