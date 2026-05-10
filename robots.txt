@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kningyuan.github.io/GEO-Demo-my/sitemap.xml
