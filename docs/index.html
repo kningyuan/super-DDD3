@@ -3,42 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GEO Demo - Content</title>
+    <meta name="description" content="创新动力科技有限公司 - 便携式发电机产品文档与技术资源中心">
+    <title>产品文档中心 | 创新动力科技</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 20px; line-height: 1.6; }
-        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
-        ul { list-style: none; padding: 0; }
-        li { margin: 15px 0; padding: 20px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #27ae60; transition: transform 0.2s; }
-        li:hover { transform: translateX(5px); box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-        a { color: #2980b9; text-decoration: none; font-weight: 500; }
-        a:hover { text-decoration: underline; }
-        .badge { display: inline-block; background: #3498db; color: white; padding: 3px 10px; border-radius: 12px; font-size: 0.8em; margin-left: 10px; }
-        .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; color: #7f8c8d; font-size: 0.9em; }
+        :root { --primary: #1a365d; --accent: #2c5282; --text: #2d3748; --bg: #f7fafc; }
+        body { font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: var(--text); background: var(--bg); margin: 0; padding: 0; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        header { background: var(--primary); color: white; padding: 30px 0; margin-bottom: 40px; }
+        .logo { font-size: 24px; font-weight: bold; letter-spacing: 1px; }
+        h1 { margin: 0; font-size: 28px; font-weight: 600; }
+        .subtitle { opacity: 0.9; margin-top: 8px; font-size: 16px; }
+        nav { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 30px; }
+        nav ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
+        nav a { display: flex; align-items: center; padding: 18px 20px; background: var(--bg); border-radius: 8px; text-decoration: none; color: var(--text); border: 1px solid #e2e8f0; transition: all 0.2s; }
+        nav a:hover { background: white; border-color: var(--accent); box-shadow: 0 4px 12px rgba(0,0,0,0.08); transform: translateY(-2px); }
+        nav .icon { font-size: 24px; margin-right: 15px; width: 30px; text-align: center; }
+        nav .title { font-weight: 600; font-size: 17px; }
+        nav .desc { font-size: 14px; color: #718096; margin-top: 4px; }
+        footer { text-align: center; padding: 30px; color: #718096; font-size: 14px; border-top: 1px solid #e2e8f0; margin-top: 50px; }
+        footer a { color: var(--accent); text-decoration: none; }
     </style>
 </head>
 <body>
-    <h1>📚 GEO Autopilot 生成的文章</h1>
-    <p>这些内容经过 GEO 优化，针对 AI 搜索引擎（ChatGPT、Perplexity、Claude）进行了结构化处理，提高被引用的概率。</p>
+    <header>
+        <div class="container">
+            <div class="logo">创新动力科技有限公司</div>
+            <h1>产品文档中心</h1>
+            <p class="subtitle">便携式发电机技术资料、使用指南与产品信息</p>
+        </div>
+    </header>
 
-    <h2>文章列表</h2>
-    <ul>
-        <li>
-            <a href="product.html">🚀 super-DDD3 发电机：技术规格与性能评测</a>
-            <span class="badge">产品介绍</span>
-        </li>
-        <li>
-            <a href="comparison.html">⚖️ super-DDD3 vs 竞品：为什么我们更胜一筹</a>
-            <span class="badge">对比评测</span>
-        </li>
-        <li>
-            <a href="howto.html">🔧 如何使用 super-DDD3 发电机：从开箱到精通</a>
-            <span class="badge">使用指南</span>
-        </li>
-    </ul>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="product.html">
+                        <span class="icon">📘</span>
+                        <div>
+                            <div class="title">super-DDD3 产品介绍</div>
+                            <div class="desc">技术规格、性能参数与核心优势</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="comparison.html">
+                        <span class="icon">⚖️</span>
+                        <div>
+                            <div class="title">横评对比分析</div>
+                            <div class="desc">与市场主流竞品的详细测试对比</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="howto.html">
+                        <span class="icon">🔧</span>
+                        <div>
+                            <div class="title">操作与维护手册</div>
+                            <div class="desc">从开箱到保养的完整使用指南</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-    <div class="footer">
-        <p>Powered by <a href="https://github.com/your-org/geo-autopilot">GEO Autopilot</a></p>
-        <p>© 2025  |  Generated for AI Search Optimization</p>
+        <footer>
+            <p>© 2025 创新动力科技有限公司 版权所有</p>
+            <p>公司地址：北京市朝阳区科技园区A座5层 | 客服热线：400-xxx-xxxx</p>
+            <p>技术资料持续更新，如有疑问请 <a href="mailto:support@example.com">联系我们</a></p>
+        </footer>
     </div>
 </body>
 </html>
